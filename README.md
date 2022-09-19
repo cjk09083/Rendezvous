@@ -1,5 +1,5 @@
 # Rendezvous-
-## Multipoint Rendezvous in Multirobot Systems (Arduino + Zigbee)
+## 멀티 로봇 랑데뷰 (Arduino + Zigbee)
 <div>
 <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white"/>
 <img src="https://img.shields.io/badge/Zigbee-EB0443?style=for-the-badge&logo=Zigbee&logoColor=white"/>
