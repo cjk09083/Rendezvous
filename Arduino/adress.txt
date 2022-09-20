@@ -1,0 +1,92 @@
+﻿
+ID 10(co) 64bit 주소
+00 13 A2 00 41 8F 2C 29
+
+ID 2main 64bit 주소
+00 13 A2 00 41 8F 21 6C
+
+ID 2sub 64bit 주소
+00 13 A2 00 41 8F 2B E0
+
+ID 1main 64bit 주소
+00 13 A2 00 41 8F 21 72
+
+16bit 주소
+FF FE
+
+99 5F
+
+***** chk sum 계산할때 SUM에서 7D 20 뺄것!!!!!!!! 7D+20 = 157  
+
+ID 2로 "D0ID:10E" 송신
+7E 00 16 10 01 00 7D 33 A2 00 41 8F 21 6C FF FE 00 00 44 30 49 44 3A 31 30 45 FE (46)
+
+
+ID 3로 "DID:10E" 송신
+7E 00 15 10 01 00 7D 33 A2 00 41 8F 2B E0 FF FE 00 00 44 49 44 3A 31 30 45 B0 (176)
+
+ID 3로 "CID:10E" 송신
+7E 00 15 10 01 00 7D 33 A2 00 41 8F 2B E0 FF FE 00 00 43 49 44 3A 31 30 45 B0 (176)
+
+ATDB
+7E 00 04 08 01 44 42 70
+
+ATND
+7E 00 04 08 01 4E 44 64
+
+스캔 (AP)
+7E 00 0F 17 07 00 7D 33 A2 00 41 8F 21 6C FF FE 02 41 50 3F
+
+스캔응답 Co 주소 : [ 00 13 A2 00 41 8F 2C 29 ]
+7E 00 1D 88 10 4E 44 00 00 00 00 7D 33 A2 00 41 8F 2C 29 20 00 FF FE 00 00 C1 05 10 1E 00 0A 00 00 E0
+
+ID 2에서 Co로 전송 "Rid2E"
+// 7E 00 13 10 01 00 13 A2 00 41 8F 2C 29 FF FE 00 00 52 69 64 32 45 81 (1e)
+
+ID 2에서 Co로 전송 "D2:3(40),4(24)E"
+// 7E 00 1D 10 01 00 7D 33 A2 00 41 8F 2C 29 FF FE 00 00 44 32 3A 33 28 34 30 29 2C 34 28 32 34 29 45 23
+
+
+ID 2에서 Co로 전송 "S02:10(32)E"
+// 7E 00 19 10 01 00 7D 33 A2 00 
+// 41 8F 2C 29 FF FE 00 00 53 30 
+// 32 3A 31 30 28 33 32 29 45 CC
+
+rssi 에러
+
+DEC	HEX	BIN
+18	12	0001 0010
+
+125	7d	0111 1101
+
+20	14	0001 0110 
+
+
+18과 20은 측정이 되는데 19가 측정이 안되고 125로 나타남.
+
+19	13	0001 0011
+
+
+int level = 100;
+int pre_level = 100;
+int rssiDur;  // Variable for RSSI
+String data = "";
+int rssiflag = 0;
+int scanflag = 100;
+int childindex = 0;
+int devicesindex = 0;
+int mode = 0 ; // 0 : 스캔시도, 1 : 스캔완료, 2: 정상작동
+int add1 = 0;
+int add2 = 0;
+int state = 0;
+int parents_id = 0;
+int pre_dif = 0;
+int com = 0;
+int right_way = 0;
+
+
+N메세지 송신
+7E 00 7D 33 10 01 00 7D 33 A2 00 41 8F 21 72 FF FE 00 00 4E 8F 2B E0 45 AC
+
+N메세지 수신
+7E 00 7D 31 90 00 7D 33 A2 00 41 8F 2C 29 C7 79 01 4E 8F 2B E0 45 27
