@@ -24,7 +24,7 @@
 - 아두이노와 Xbee 모듈을 사용하여 트리 네트워크 구축
 <div>
 <img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/Xbee.jpg" width="30%"/> &nbsp;
-<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/XCTU.jpg" width="60%"/> &nbsp;
+<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/XCTU.jpg" width="30%"/> &nbsp;
 </div>
 - 
 
