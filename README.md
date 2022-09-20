@@ -42,5 +42,6 @@
 - 부모 로봇으로부터 더 상위의 로봇 좌표를 이어받음
 - 현재 자식 로봇(3차)와 부모 로봇(2차)은 둘다 상위 부모 로봇(1차)의 자식로봇이 되어 부모 로봇에게 접근
 <div align="center">
-<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/2차_랑데부.gif" width="80%"/> &nbsp;
+<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/2차_랑데부_1.jpg" width="40%"/> &nbsp;
+<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/2차_랑데부_2.jpg" width="40%"/> &nbsp;
 </div>
