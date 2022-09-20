@@ -30,11 +30,16 @@
 
 
 ### 부모 로봇 탐지
-- 로봇 좌우에 Xbee 모듈을 장착해 네트워크로 연결된 부모로봇과의 거리를 RSSI로 측정
+- 로봇 좌우에 Xbee 모듈을 장착해 네트워크로 현재 연결된 부모로봇과의 거리를 RSSI로 측정
 - 두 RSSI값이 유사해지도록 차체를 회전해 부모로봇을 바라보게 만듬
 <div align="center">
 <img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/로봇%20조감도.png" width="60%"/> &nbsp;
 </div>
 
 
-
+### 부모 로봇 랑데부
+- 부모 로봇과 일정 거리 이상 가까워지면 (RSSI값이 작아지면) 랑데부로 판별하고 부모로봇으로 부터 더 상위의 부모로봇 좌표를 이어받음
+- 현재 자식 로봇(3차)와 부모 로봇(2차)은 둘다 상위 부모 로봇(1차)의 자식로봇이 되어 부모 로봇에게 접근
+<div align="center">
+<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/2차_랑데부.gif" width="80%"/> &nbsp;
+</div>
