@@ -21,12 +21,20 @@
 ## 기능
 
 ### Zigbee 트리구조 구축
-- 아두이노와 Xbee 모듈을 사용하여 트리 네트워크 구축
+- 아두이노와 Xbee 모듈을 이용하여 트리 네트워크 구축
 <div align="center">
 <img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/Xbee.jpg" width="30%"/> &nbsp;
 <img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/XCTU.jpg" width="30%"/> &nbsp;
 <img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/Zigbee%20네트워크.jpg" width="30%"/> &nbsp;
 </div>
 
-- 
+
+### 부모 로봇 탐지
+- 로봇 좌우에 Xbee 모듈을 장착해 네트워크로 연결된 부모로봇과의 거리를 RSSI로 측정
+- 두 RSSI값이 유사해지도록 차체를 회전해 부모로봇을 바라보게 만듬
+<div align="center">
+<img src="https://github.com/cjk09083/Rendezvous/blob/main/사진%26영상/로봇%20조감도.png" width="60%"/> &nbsp;
+</div>
+
+
 
